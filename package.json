@@ -20,8 +20,8 @@
   },
   "homepage": "https://github.com/oxheadalpha/tezos-faucet-backend#readme",
   "dependencies": {
-    "@taquito/signer": "^17.1.1",
-    "@taquito/taquito": "^17.1.1",
+    "@taquito/signer": "^22.0.0",
+    "@taquito/taquito": "^22.0.0",
     "axios": "^1.4.0",
     "body-parser": "^1.20.2",
     "dotenv": "^16.3.1",
