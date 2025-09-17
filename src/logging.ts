@@ -8,11 +8,29 @@ const httpWinstonLogger = winston.createLogger({
     winston.format.printf(
       ({
         timestamp,
-        message: { method, url, status, responseTime, address, amount },
-      }) =>
-        `${timestamp} ${method?.padEnd(7)} ${url?.padEnd(10)} ${status} ${(
+        message,
+      }) => {
+
+        const {
+          method,
+          url,
+          status,
+          responseTime,
+          address,
+          amount,
+        } = message as {
+          method?: string
+          url?: string
+          status?: number
+          responseTime?: number
+          address?: string
+          amount?: string
+        };
+
+        return `${timestamp} ${method?.padEnd(7)} ${url?.padEnd(10)} ${status} ${(
           responseTime + "ms"
         ).padEnd(5)} ${address} ${amount}`
+      }
     )
   ),
   transports: [new winston.transports.Console()],
