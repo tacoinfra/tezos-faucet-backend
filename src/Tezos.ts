@@ -1,5 +1,5 @@
 import { InMemorySigner } from "@taquito/signer"
-import { TezosToolkit, RpcForger, Forger } from "@taquito/taquito"
+import { TezosToolkit } from "@taquito/taquito"
 import { format } from "@taquito/utils"
 
 import env from "./env"
@@ -14,7 +14,6 @@ export const Tezos = (() => {
   }
 
   const TezToolkit = new TezosToolkit(rpcUrl)
-  TezToolkit.setForgerProvider(TezToolkit.getFactory(RpcForger)() as Forger);
 
   const faucetPrivateKey = env.FAUCET_PRIVATE_KEY
   if (!faucetPrivateKey) {
