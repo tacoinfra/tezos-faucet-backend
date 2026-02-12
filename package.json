@@ -1,6 +1,6 @@
 {
   "name": "tezos-faucet-backend",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "Tezos Faucet Backend",
   "main": "dist/src/api.js",
   "scripts": {
@@ -20,8 +20,8 @@
   },
   "homepage": "https://github.com/oxheadalpha/tezos-faucet-backend#readme",
   "dependencies": {
-    "@taquito/signer": "^23.0.1",
-    "@taquito/taquito": "^23.0.1",
+    "@tezos-x/octez.js-signer": "^0.9.0",
+    "@tezos-x/octez.js": "^0.9.0",
     "axios": "^1.12.2",
     "body-parser": "^1.20.2",
     "dotenv": "^17.2.2",
