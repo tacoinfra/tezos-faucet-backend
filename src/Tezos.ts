@@ -1,6 +1,6 @@
-import { InMemorySigner } from "@tezos-x/octez.js-signer"
-import { TezosToolkit } from "@tezos-x/octez.js"
-import { format } from "@tezos-x/octez.js-utils"
+import { InMemorySigner } from "@taquito/signer"
+import { TezosToolkit } from "@taquito/taquito"
+import { format } from "@taquito/utils"
 
 import env from "./env"
 

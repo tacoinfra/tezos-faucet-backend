@@ -1,4 +1,4 @@
-import { validateKeyHash } from "@tezos-x/octez.js-utils"
+import { validateKeyHash } from "@taquito/utils"
 import { Request, Response, NextFunction } from "express"
 
 import env from "./env"
